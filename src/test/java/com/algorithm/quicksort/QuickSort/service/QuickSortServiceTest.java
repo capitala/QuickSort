@@ -1,7 +1,9 @@
 package com.algorithm.quicksort.QuickSort.service;
 
 import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,5 +20,4 @@ public void getSortedResultsTest() {
 	int[] results=service.getSortedResults(new int[] {1,4,3,5,6,2});
 	assertArrayEquals(new int[] {1,2,3,4,5,6},results );
 }
-
 }
